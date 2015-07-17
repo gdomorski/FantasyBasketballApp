@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>Greg Domorski's Fantasy Basketball App</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+    $(".loader").fadeOut("slow");
+})
+</script>
+
+
+
+<link rel="stylesheet" href="gdomorskibasketball.css">	
+</head>
+<body BACKGROUND="hoopswallpaper.jpg">
+
+
+<center><h1>Greg Domorski's Fantasy Basketball App</h1></center>
+<div class="timer">The draft starts in <span id="time">30:00</span> minutes.</div>
+
+ <audio id="soundbar" src="draftsound.mp3" preload="auto"> </audio>
+
+
+<table style="width:75%">
+  <tr class="tableheaders">
+    <td> Team Name </td>
+    <td> Player </td>
+    <td> Username </td>
+    <td> Roster </td>
+  <tr>
+  <tr>
+    <td id="team1"></td>
+    <td id="owner1"></td> 
+    <td id="username1">what up</td>
+    <td id="roster1"></td>
+  </tr>
+  <tr>
+    <td id="team2"></td>
+    <td id="owner2"></td> 
+    <td id="username2"></td>
+    <td id="roster2"></td>
+  </tr>
+</table>
+
+	
+
+   
+
+<script> 
+
+function draftTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text(minutes + ":" + seconds);
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+jQuery(function ($) {
+    var thirtyMinutes = 60 * 30,
+        display = $('#time');
+    draftTimer(thirtyMinutes, display);
+});
+
+
+function PlayerProfile(name, username, team, roster) {
+
+  var g = function(str){return document.getElementById(str);};  
+  this.firstTeam = g("team1");  
+  this.firstOwner = g("owner1"); 
+  this.firstRoster = g("roster1");
+  this.firstUsername = g("username1");
+  this.secondTeam = g("team2");  
+  this.secondOwner = g("owner2"); 
+  this.secondRoster = g("roster2");
+  this.secondUsername = g("username2");
+  this.showFirstName = function(){this.firstOwner.textContent = name};
+	this.showFirstUsername = function(){this.firstUsername.textContent = username};
+	this.showFirstTeam = function(){this.firstTeam.textContent = team};
+  this.showFirstRoster = function(){this.firstRoster.textContent = roster};
+  this.showSecondName = function(){this.secondOwner.textContent = name};
+  this.showSecondUsername = function(){this.secondUsername.textContent = username};
+  this.showSecondTeam = function(){this.secondTeam.textContent = team};
+  this.showSecondRoster = function(){this.secondRoster.textContent = roster};
+
+  };
+  
+	
+
+var player1 = new PlayerProfile('Greg Domorski', 'gdomorski', 'The Ballers', [' Russell Westbrook', ' Kevin Durant', ' Lebron James', ' Chris Paul', ' Carmelo Anthony', ' Kyrie Irving', ' James Harden', ' Dwight Howard', ' Derrick Rose']);
+
+var player2 = new PlayerProfile('Katherine Chen', 'kchen', 'Taiwan Pride', [' Stephen Curry', ' Jeremy Lin', ' Tyson Chandler', ' Chandler Parsons', ' Blake Griffin', ' Tim Duncan', ' Manu Ginobilli']);
+
+
+
+player1.showFirstName();
+player1.showFirstUsername();
+player1.showFirstTeam();
+player1.showFirstRoster();
+player2.showSecondName();
+player2.showSecondUsername();
+player2.showSecondTeam();
+player2.showSecondRoster();
+var sample = document.getElementById("soundbar");
+sample.play();
+
+
+
+
+</script> 
+
+<div class="loader"></div>
+<p>
+<p>
+<div class="newPlayer"  style="width: 400px">
+
+<p>
+Add Player
+<p>
+<form>
+Your Name<br>
+<input type="text" name="firstname">
+<br>
+Username<br>
+<input type="text" name="lastname">
+<br>
+Team Name<br>
+<input type="text" name="lastname">
+<br>
+Roster
+<br>
+<input type="text" style="width: 200px" name="lastname">
+<br>
+<button>Submit</button>
+
+</form>
+
+</div>
+ 
+</body>
+</html>
