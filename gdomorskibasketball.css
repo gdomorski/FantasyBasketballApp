@@ -1,19 +1,5 @@
 
-table, th, td {
-	border-collapse: collapse;
-    border: 1px solid black;
-    padding: 15px;
 
-}
-
-
-tr:nth-child(even) {
-    background-color: #eee;
-}
-
-tr:nth-child(odd) {
-    background-color: #fff;
-}
 
 
 body {
@@ -53,4 +39,46 @@ body {
 
 #soundbar { 
 	display: none 
+}
+
+
+
+.headtable{
+	background-color: #000099;
+	font-family: Arial;
+	color: white;
+	font-weight: bold;
+}
+
+.infoRow{
+	font-family: Arial;
+	color: navy blue;
+	font-weight: bold;
+	text-align: left;
+	background: #DBDBFF;
+}
+
+table td{
+	font-family: Arial;
+	background-color: white;
+}
+
+.border-bottom {
+	border-bottom: solid 1px black;
+}
+
+table a{
+	text-decoration: none;
+}
+
+.pct {
+	background: #DBDBFF;
+}
+
+tr {
+	text-align: left;
+}
+
+#teamName{
+	text-align: left;
 }
