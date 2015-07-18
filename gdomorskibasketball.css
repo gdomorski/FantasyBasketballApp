@@ -29,12 +29,12 @@ html {
 }
 
 .newPlayer {	
-	border: 1px solid black;
 	padding: 15px;
 	background-color: white;
 	line-height: 20px;
 	float: left;
 	margin-right: 20px
+
 }
 
 .timer {
@@ -90,10 +90,12 @@ tr {
 
 
 .checkout {
+
   border-style: solid;
   border-width: 1px;
   padding: 15px;
   width: 500px;
   background: white ;
+
 }
 
