@@ -4,17 +4,13 @@
 <title>Greg Domorski's Fantasy Basketball App</title>
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="angular.min.js"></script>
 
 <script type="text/javascript">
   $(window).load(function() {
     $(".loader").fadeOut("slow");
 })
-
-
-
-
 </script>
-
 
 
 <link rel="stylesheet" href="gdomorskibasketball.css">	
@@ -148,7 +144,7 @@ function draftTimer(duration, display) {
     }, 1000);
 }
 
-jQuery(function ($) {
+$(function ($) {
     var thirtyMinutes = 60 * 30,
         display = $('#time');
     draftTimer(thirtyMinutes, display);
@@ -208,7 +204,6 @@ sample.play();
 
 
 
-  <script src="angular.min.js"></script>
   
   <script>
 
@@ -283,7 +278,7 @@ sample.play();
 
   <div>
     <ul>
-      <li data-ng-repeat="chiefs in players | filter:name | orderBy:compensation"> {{ chiefs.name }} - {{ chiefs.team }} - {{chiefs.position }}</li>
+      <li data-ng-repeat="chiefs in players | filter:name | orderBy:name"> {{ chiefs.name }} - {{ chiefs.team }} - {{chiefs.position }}</li>
     </ul>
   </div>
   </div>
