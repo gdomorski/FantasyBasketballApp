@@ -18,7 +18,10 @@
 </head>
 <body>
 
-<center><img src="images/logo.jpg" style="width:600px;height:120;"</img></center>
+<br>
+<br><br><br>
+
+
 <center>
 <div class="timer">The draft starts in <span id="time">30:00</span> minutes.</div>
 
@@ -97,7 +100,7 @@
 
 </br>
 </br>
-<table style="width:890px">
+<table id="playertable" style="width:890px">
 
 
   <tr>
@@ -139,19 +142,19 @@
         <p>
         <form>
         Your Name<br>
-        <input type="text" name="firstname">
+        <input type="text" name="firstname" id="personname">
         <br>
         Username<br>
         <input type="text" name="lastname">
         <br>
         Team Name<br>
-        <input type="text" name="lastname">
+        <input type="text" name="lastname" id="theteam">
         <br>
         Roster
         <br>
         <input type="text" style="width: 200px" name="lastname">
         <br>
-        <button>Submit</button>
+        <button onclick="addRow('playertable')">Submit</button>
         </form>
         </div>
     </td>

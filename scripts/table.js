@@ -1,5 +1,5 @@
 
-function draftTimer(duration, display) {
+var draftTimer = function (duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         minutes = parseInt(timer / 60, 10)
@@ -65,5 +65,20 @@ var sample = document.getElementById("soundbar");
 sample.play();
 
 
+function addRow(tableID) {
+  var tableCount = 4;
+  var tableRef = document.getElementById('playertable');
+  var newRow   = playertable.insertRow(tableCount);
+  var newCell  = newRow.insertCell(0);
+  var anotherCell = newRow.insertCell(1);
+  var thirdCell = newRow.insertCell(2);
+  var fourthCell = newRow.insertCell(3);
+  var firstValue = document.getElementById("theteam").value;
+  var secondValue = document.getElementById("personname").value
+  var newText  = document.createTextNode(firstValue);
+  var otherText  = document.createTextNode(secondValue);
+  newCell.appendChild(newText);
+  anotherCell.appendChild(otherText);
+}
 
  
