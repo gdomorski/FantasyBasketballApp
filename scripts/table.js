@@ -67,19 +67,30 @@ sample.play();
 var addPlayer = function (tableID) {
   var tableCount = 4;
   var tableRef = document.getElementById('playertable');
+  var firstValue = document.getElementById("theteam").value;
+  var secondValue = document.getElementById("personname").value
+  var thirdValue = document.getElementById("username").value
+  var fourthValue = document.getElementById("roster").value
+
+
+  //if the input fields are not entered properly, don't affect the table;
+  if(firstValue === "" || secondValue === "" || thirdValue === "" || fourthValue === ""){
+    alert('You need to fill out all the entries!')
+    return;
+  }
+
   var newRow   = playertable.insertRow(tableCount);
   var newCell  = newRow.insertCell(0);
   var anotherCell = newRow.insertCell(1);
   var thirdCell = newRow.insertCell(2);
   var fourthCell = newRow.insertCell(3);
-  var firstValue = document.getElementById("theteam").value;
-  var secondValue = document.getElementById("personname").value
-  var thirdValue = document.getElementById("username").value
-  var fourthValue = document.getElementById("roster").value
   var newText  = document.createTextNode(firstValue);
   var otherText  = document.createTextNode(secondValue);
   var thirdText  = document.createTextNode(thirdValue);
   var fourthText  = document.createTextNode(fourthValue);
+
+
+
   newCell.appendChild(newText);
   anotherCell.appendChild(otherText);
   thirdCell.appendChild(thirdText);

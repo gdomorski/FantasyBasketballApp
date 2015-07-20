@@ -28,13 +28,12 @@ html {
 	background: url('../images/Loading.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
-.newPlayer {	
-	padding: 15px;
+.newPlayer {
+	padding-top: 1px;	
+	padding-left: 15px;
 	background-color: white;
 	line-height: 20px;
 	float: left;
-	margin-right: 20px
-
 }
 
 .timer {
