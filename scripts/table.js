@@ -42,13 +42,12 @@ function PlayerProfile(name, username, team, roster) {
   this.showSecondUsername = function(){this.secondUsername.textContent = username};
   this.showSecondTeam = function(){this.secondTeam.textContent = team};
   this.showSecondRoster = function(){this.secondRoster.textContent = roster};
-
+  
   };
   
 	
 
 var player1 = new PlayerProfile('Greg Domorski', 'gdomorski', 'The Ballers', [' Russell Westbrook', ' Kevin Durant', ' Lebron James', ' Chris Paul', ' Carmelo Anthony', ' Kyrie Irving', ' James Harden', ' Dwight Howard', ' Derrick Rose']);
-
 var player2 = new PlayerProfile('Katherine Chen', 'kchen', 'Taiwan Pride', [' Stephen Curry', ' Jeremy Lin', ' Tyson Chandler', ' Chandler Parsons', ' Blake Griffin', ' Tim Duncan', ' Manu Ginobilli']);
 
 
@@ -65,7 +64,7 @@ var sample = document.getElementById("soundbar");
 sample.play();
 
 
-function addRow(tableID) {
+var addPlayer = function (tableID) {
   var tableCount = 4;
   var tableRef = document.getElementById('playertable');
   var newRow   = playertable.insertRow(tableCount);
@@ -75,10 +74,16 @@ function addRow(tableID) {
   var fourthCell = newRow.insertCell(3);
   var firstValue = document.getElementById("theteam").value;
   var secondValue = document.getElementById("personname").value
+  var thirdValue = document.getElementById("username").value
+  var fourthValue = document.getElementById("roster").value
   var newText  = document.createTextNode(firstValue);
   var otherText  = document.createTextNode(secondValue);
+  var thirdText  = document.createTextNode(thirdValue);
+  var fourthText  = document.createTextNode(fourthValue);
   newCell.appendChild(newText);
   anotherCell.appendChild(otherText);
+  thirdCell.appendChild(thirdText);
+  fourthCell.appendChild(fourthText);
 }
 
  
