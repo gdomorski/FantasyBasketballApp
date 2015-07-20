@@ -18,8 +18,7 @@
 </head>
 <body>
 
-<br>
-<br><br><br>
+<br><br><br><br>
 
 
 <center>
@@ -176,7 +175,7 @@
 
 
     <ul>
-      <li data-ng-repeat="chiefs in players | filter:name | orderBy:name"> {{ chiefs.name }} - {{ chiefs.team }} - {{chiefs.position }}</li>
+      <li data-ng-repeat="playerdirect in players | filter:name | orderBy:name"> {{ playerdirect.name }} - {{ playerdirect.team }} - {{playerdirect.position }}</li>
     </ul>
   
   </div>
