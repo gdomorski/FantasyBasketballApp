@@ -4,7 +4,7 @@ This is a Fantasy Basketball App that I have been working on. Below is some of t
 
 -- AngularJS is used to sort through players
 <br />
--- Add Player feature added with javascript
+-- Add Player feature made with javascript
 <br />
 -- Video Embedded
 <br />
@@ -12,4 +12,6 @@ This is a Fantasy Basketball App that I have been working on. Below is some of t
 <br />
 -- Plays draft sound when entering website
 <br />
--- JQuery loading images
+-- JQuery loading image
+<br />
+-- Advanced CSS styling
