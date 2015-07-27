@@ -14,4 +14,4 @@ This is a Fantasy Basketball App that I have been working on. Below is some of t
 <br />
 -- JQuery loading image
 <br />
--- Advanced CSS styling
+-- Twitter Bootstrap JS and CSS
