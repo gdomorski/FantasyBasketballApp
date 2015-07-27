@@ -74,7 +74,7 @@
 
 
     <ul>
-      <li data-ng-repeat="playerdirect in players | filter:name | orderBy:name"> {{ playerdirect.name }} - {{ playerdirect.team }} - {{playerdirect.position }}</li>
+      <li data-ng-repeat="playerdirect in players | filter:name | orderBy:name"> <b> Name: </b>{{ playerdirect.name }} <b> Team: </b> {{ playerdirect.team }} <b> Position: </b> {{playerdirect.position }} <b> Points: </b> {{playerdirect.points}}</li>
     </ul>
   
   
