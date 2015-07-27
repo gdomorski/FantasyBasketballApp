@@ -15,3 +15,6 @@ This is a Fantasy Basketball App that I have been working on. Below is some of t
 -- JQuery loading image
 <br />
 -- Twitter Bootstrap JS and CSS
+
+
+![alt tag](https://github.com/gdomorski/FantasyBasketballApp/blob/master/sampleview.png)
