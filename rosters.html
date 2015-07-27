@@ -10,7 +10,6 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -18,7 +17,7 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="scripts/angular.min.js"></script>
-
+<link rel="stylesheet" href="css/main.css">
 
 
 <script type="text/javascript">
@@ -31,26 +30,19 @@
 <style>
 
 .backgroundwallpaper { 
-  background: url(images/basketballwallpaper.jpg) no-repeat center center fixed; 
+  background: url(images/kobee.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-
 </style>
 
 
-	
+  
 </head>
 <body class="backgroundwallpaper">
-
-
-
-
-
-
 
 
 <nav class="navbar navbar-inverse">
@@ -65,9 +57,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="standings.html">Team Standings</a></li>
-        <li><a href="rosters.html">Team Info</a></li> 
+        <li class="active" ><a href="rosters.html">Team Info</a></li> 
         <li><a href="playerlookup.html">Player Finder</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -78,43 +70,38 @@
   </div>
 </nav>
 
-
-
 <div class="container">
-<div class="jumbotron col-md-14">
-  <img src="images/mainlogo.png" style="width:820px"> </img>
 
-  <p>
-  <table>
-  <tr>
-    <td>
-  <p>Welcome to Greg Domorski's fantasy basketball app. In this app I am using Twitter Boostrap mostly for design and AngularJS for the "Find Player" function. The app also has a login and register page, embedded video, a draft countdown timer and jquery loading page. </p>
-  <a class="btn btn-primary btn-lg success" href="signup.html" role="button">Sign up today!</a>
-    </td>
-    <td>
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/1b5MB-A9_LM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe> 
-        </div>
-    </td>
-  </table>
-  
+<table id="playertable" class="table" border="3">
 
-</div>
+  <tr style="background-color: #FFFFFF">    
+    <td class="headtable"> <b>Team Name</b> </td>
+    <td class="headtable"> <b>Player</b> </td>
+    <td class="headtable"> <b>Username</b> </td>
+    <td class="headtable"> <b>Roster</b>  </td>
+ 
+  </tr>
+
+  <tr style="background-color: #FFFFFF">
+    <td id="team1"></td>
+    <td id="owner1"></td> 
+    <td id="username1"></td>
+    <td id="roster1"></td>
+  </tr>
+  <tr style="background-color: #FFFFFF">
+    <td id="team2"></td>
+    <td id="owner2"></td> 
+    <td id="username2"></td>
+    <td id="roster2"></td>
+  </tr>
+</table>
+
+ </div>
 
 
-
-
-
-
-
-
-
-
-</div>
 
 
 <script src="scripts/table.js"></script>
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers.js"></script>
 
 </body>
 </html>

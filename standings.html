@@ -10,7 +10,6 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -31,26 +30,19 @@
 <style>
 
 .backgroundwallpaper { 
-  background: url(images/basketballwallpaper.jpg) no-repeat center center fixed; 
+  background: url(images/lillard.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-
 </style>
 
 
-	
+  
 </head>
 <body class="backgroundwallpaper">
-
-
-
-
-
-
 
 
 <nav class="navbar navbar-inverse">
@@ -65,8 +57,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="standings.html">Team Standings</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="standings.html">Team Standings</a></li>
         <li><a href="rosters.html">Team Info</a></li> 
         <li><a href="playerlookup.html">Player Finder</a></li> 
       </ul>
@@ -80,36 +72,88 @@
 
 
 
+
+
+
 <div class="container">
-<div class="jumbotron col-md-14">
-  <img src="images/mainlogo.png" style="width:820px"> </img>
-
-  <p>
-  <table>
-  <tr>
-    <td>
-  <p>Welcome to Greg Domorski's fantasy basketball app. In this app I am using Twitter Boostrap mostly for design and AngularJS for the "Find Player" function. The app also has a login and register page, embedded video, a draft countdown timer and jquery loading page. </p>
-  <a class="btn btn-primary btn-lg success" href="signup.html" role="button">Sign up today!</a>
-    </td>
-    <td>
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/1b5MB-A9_LM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe> 
+   <table class="table" border="3">
+      <thead>
+      <tr style="background-color: #FFFFFF">
+        <td colspan="18" > <b> Regular Season Standings </br> </td>
+      </tr>
+     
+      
+      <tr style="background-color: #FFFFFF">
+        <div>
+        <td>Team</td>
+        <td>W</td>
+        <td>L</td>
+        <td>T</td>
+        <td>PCT</td>
+        <td>PF</td>
+        <td>PA</td>
+        <td>Net Points</td>
+        <td><a href="#">GP</a></td>
+        <td><a href="#">Home</a></td>
+        <td><a href="#">Road</a></td>
+        <td><a href="#">Div</a></td>
+        <td><a href="#">Pct</a></td>
+        <td><a href="#">Conf</a></td>
+        <td><a href="#">Pct</a></td>
+        <td><a href="#">Non-Conf</a></td>
+        <td><a href="#">Streak</a></td>
+        <td><a href="#">Last 5</a></td>
         </div>
-    </td>
-  </table>
-  
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="success">
+        <td id="teamName"><a href="#">Taiwan Pride </a></td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td class="pct">1.667</td>
+        <td>83</td>
+        <td>55</td>
+        <td>28</td>
+        <td>9</td>
+        <td>2-0</td>
+        <td>0-1</td>
+        <td>1-0</td>
+        <td>1.000</td>
+        <td>2-0</td>
+        <td>1.000</td>
+        <td>0-1</td>
+        <td>1W</td>
+        <td>2-1</td>
+      </tr>
+      
+      <tr class="danger">
+        <td id="teamName"><a href="#">The Ballers</a></td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+        <td class="pct">.333</td>
+        <td>79</td>
+        <td>86</td>
+        <td>-7</td>
+        <td>9</td>
+        <td>0-2</td>
+        <td>1-0</td>
+        <td>1-0</td>
+        <td>1.000</td>
+        <td>1-0</td>
+        <td>1.000</td>
+        <td>0-2</td>
+        <td>2L</td>
+        <td>1-2</td>
+      </tr>
+    </tbody>
+    </table>
+
 
 </div>
 
-
-
-
-
-
-
-
-
-
-</div>
 
 
 <script src="scripts/table.js"></script>
