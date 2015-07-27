@@ -1,11 +1,55 @@
 
-.backgroundwallpaper { 
-  background: url(../images/basketballwallpaper.jpg) no-repeat center center fixed; 
+.mainwallpaper { 
+  background: url(../images/mainwallpaper.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+
+.durantwallpaper { 
+  background: url(../images/durant.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.griffinwallpaper { 
+  background: url(../images/griffin.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.lillardwallpaper { 
+  background: url(../images/lillard.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.kobewallpaper { 
+  background: url(../images/bryant.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.irvingwallpaper { 
+  background: url(../images/irving.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 .loader {
   position: fixed;
