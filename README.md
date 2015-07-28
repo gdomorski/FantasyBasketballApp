@@ -5,6 +5,8 @@ Features Include...
 -AngularJS Player Finder
 <br/>
 -Twitter Bootstrap Styling and Functionality
+<br>
+-Typing Javascript Animation
 <br/>
 -Embedded Video
 <br/>
