@@ -9,13 +9,14 @@
 
 
 
-<!-- Latest compiled and minified CSS -->
+<!-- CSS -->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 
-<!-- jQuery library -->
+<!-- JQUERY -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
+<!-- Javascript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="scripts/angular.min.js"></script>
@@ -82,31 +83,54 @@
             <form class="form-horizontal" action='' method="POST">
               <fieldset>
                 <div id="legend">
-                  <legend class="">Login</legend>
+                </br>
+                  
                 </div>    
                 <div class="container"> 
+
+
                 <div class="form-group">
-                  <label >Username</label>
-                        <input class="input-xlarge" id="pwd">
+                <div class="control-group">
+                <div class="input-group">
+                <!-- Username -->
+                
+                  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                  <input class="form-control" style="width: 200px;" placeholder="Username">
                 </div>
-                <div class="form-group">
-                  <label for="pwd">Password:</label>
-                  <input type="password" class="input-xlarge" id="pwd">
+              </div>
+            </br>
+
+              <div class="control-group">
+              <div class="input-group">
+                <!-- Username -->
+                
+                  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                  <input class="form-control" type="password" style="width: 200px;" placeholder="Password">
                 </div>
-                <div class="form-group">
-                  <label>First Name</label>
-            <input class="input-xlarge" id="pwd">
-            </div>
-             <div class="form-group">
-            <label>Last Name</label>
-            <input class="input-xlarge" id="pwd">
-            </div>
-             <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="input-xlarge" id="email">
-            </div>
-          </div>
+              </div>
+            </br>
+              
+              <div class="control-group">
+              <div class="input-group">
+                <!-- Your Name -->
+                
+                  <span class="input-group-addon"><i class="fa fa-smile-o fa-fw"></i></span>
+                  <input class="form-control" style="width: 200px;" placeholder="Your Name">
+                </div>
+              </div>
+                
+            </br>    
+                <!-- Email -->
             
+              <div class="control-group">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                  <input type="email" class="form-control" style="width: 200px;" placeholder="Email">
+                </div>
+              </div>
+            
+            </br>
+
             <div>
               <button class="btn btn-primary">Create Account</button>
             </div>
@@ -118,20 +142,23 @@
           <form id="tab">
             <br />
             <div class="control-group">
+              <div class="input-group">
                 <!-- Username -->
-                <label class="control-label"  for="username">Username</label>
-                <div class="controls">
-                  <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+                
+                
+                  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                  <input class="form-control" style="width: 200px;" placeholder="Username">
                 </div>
               </div>
-              
-              <div class="control-group">
+
                 <!-- Password-->
-                <label class="control-label" for="password">Password</label>
-                <div class="controls">
-                  <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+
+              <br>
+              <div class="control-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                  <input class="form-control" style="width: 200px;" type="password" placeholder="Password">
                 </div>
-              </div>
 
               <div class="checkbox">
                 <label><input type="checkbox"> Remember me</label>
@@ -151,6 +178,8 @@
       </div>
     </div>
   </div>
+
+
 
 
 
