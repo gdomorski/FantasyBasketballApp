@@ -63,12 +63,19 @@
 
 
 
+#changeopa {
+  opacity: .8;
+}
 
+#tableopa {
+  background-color: rgba(248,248,255 .5);
+
+}
 
 .banner-text h1{
   text-decoration:none;
   cursor:normal;
-  
+  color:#999999;
   font-weight:700;
   font-size: 55px;
   text-align: center;
