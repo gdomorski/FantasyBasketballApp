@@ -8,6 +8,8 @@ Features Include...
 <br>
 -Typing Javascript Animation
 <br/>
+-Added FontAwesome icons
+<br/>
 -Embedded Video
 <br/>
 -Jquery Loading Image Script
@@ -21,3 +23,6 @@ Features Include...
 
 
 ![alt tag](https://github.com/gdomorski/FantasyBasketballApp/blob/master/sampleview.png)
+
+ 
+
