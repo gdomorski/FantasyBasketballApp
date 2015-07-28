@@ -18,6 +18,8 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="scripts/angular.min.js"></script>
+<script src="scripts/typed.js"></script>
+
 
 
 
@@ -25,6 +27,21 @@
   $(window).load(function() {
     $(".loader").fadeOut("slow");
 })
+
+
+
+  $(function(){
+    $(".typed").typed({
+      strings: ["enjoyable", "intuitive", "informative", "interactive"],
+      typeSpeed: 50,
+      backDelay: 3000,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|",
+    });
+  });
+
+
 </script>
 
 
@@ -67,29 +84,16 @@
 
 
 
-<div class="container">
-<div class="jumbotron col-md-14">
-  <img src="images/mainlogo.png" style="width:820px"> </img>
+<div class="container content-container banner">
+    <div class="banner-text col-md-8">
+      <h1>Most <a class="typed"> </a> </br> Fantasy </br> Basketball </br> App</h1>
 
-  <p>
-  <table>
-  <tr>
-    <td>
-  <p>Welcome to Greg Domorski's fantasy basketball app. For this app I am used Twitter Boostrap for design and functionality. I also added AngularJS for the "Find Player" function. Other features include login and register pages, embedded video, draft countdown and a jquery loading page. </p>
-  <a class="btn btn-primary btn-lg success" href="signup.html" role="button">Sign up today!</a>
-    </td>
-    <td>
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/1b5MB-A9_LM?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe> 
-        </div>
-    </td>
-  </table>
-  
+      <br>
+      <br>
 
-</div>
-
-
-
-
+      
+    </div>
+  </div>
 
 
 

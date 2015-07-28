@@ -60,3 +60,30 @@
   z-index: 9999;
   background: url('../images/Loading.gif') 50% 50% no-repeat rgb(0,0,0);
 }
+
+
+
+
+
+.banner-text h1{
+  text-decoration:none;
+  cursor:normal;
+  
+  font-weight:700;
+  font-size: 55px;
+  text-align: center;
+
+}
+
+
+
+.banner-text a {
+
+  text-decoration:none;
+  cursor:normal;
+  color:#ff0000;s
+  font-weight:700
+
+
+
+}
